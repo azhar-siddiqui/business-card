@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00d4ff;
+  --color-primary-dark: #00aaff;
+  --color-bg: #0a0e17;
+  --color-card: #111827;
+  --color-text: #e2e8f0;
+  --color-glow: rgba(0, 212, 255, 0.35);
+  --color-light-bg: #f8fafc;
+  --color-light-card: #ffffff;
+  --color-light-text: #1e293b;
+}
+
+:root {
+  --primary: var(--color-primary);
+  --primary-dark: var(--color-primary-dark);
+  --bg: var(--color-bg);
+  --card: var(--color-card);
+  --text: var(--color-text);
+  --glow: var(--color-glow);
+  --light-bg: var(--color-light-bg);
+  --light-card: var(--color-light-card);
+  --light-text: var(--color-light-text);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --card: var(--light-card);
+  --text: var(--light-text);
+  --glow: rgba(0, 170, 255, 0.2);
+}
+
+/* Rest of your styles – replace theme() calls with var() */
+body {
+  @apply min-h-screen bg-[var(--bg)] text-[var(--text)] font-sans;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  transition: background 0.5s ease;
+}
+
+body.light {
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+}
+
+/* Example: instead of theme(colors.primary) */
+.text-primary {
+  color: var(--primary);
+}
+.bg-glow {
+  background: radial-gradient(
+    circle at 20% 30%,
+    var(--glow) 0%,
+    transparent 70%
+  );
+}
+
+/* ... your other classes using var(--primary), var(--glow), etc. */
