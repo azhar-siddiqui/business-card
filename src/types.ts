@@ -44,6 +44,10 @@ export const PROFILE_DATA = {
   ],
 } as const;
 
+export const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Hi Azhar! 👋 I came across your profile and would like to connect with you regarding AI, software development, and collaboration opportunities. Looking forward to hearing from you!",
+);
+
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: "YouTube",
@@ -56,6 +60,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     url: "https://instagram.com/azhar.siddiqui_",
     icon: "fab fa-instagram",
     label: "Instagram @azhar.siddiqui_",
+  },
+  {
+    name: "WhatsApp",
+    url: `https://wa.me/917558380826?text=${WHATSAPP_MESSAGE}`,
+    icon: "fab fa-whatsapp",
+    label: "WhatsApp",
   },
 ];
 
