@@ -47,15 +47,15 @@ export const PROFILE_DATA = {
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: "YouTube",
-    url: "https://youtube.com/@azharai",
+    url: "https://youtube.com/@azharsiddiqui3055",
     icon: "fab fa-youtube",
-    label: "YouTube @azharai",
+    label: "YouTube @azharsiddiqui3055",
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/azhar.dev",
+    url: "https://instagram.com/azhar.siddiqui_",
     icon: "fab fa-instagram",
-    label: "Instagram @azhar.dev",
+    label: "Instagram @azhar.siddiqui_",
   },
 ];
 
@@ -77,15 +77,15 @@ export const CONTACT_ITEMS = [
   {
     type: "youtube",
     icon: "fab fa-youtube",
-    value: "YouTube @azharai",
-    link: "https://youtube.com/@azharai",
+    value: "YouTube",
+    link: "https://youtube.com/@azharsiddiqui3055",
     label: "YouTube",
   },
   {
     type: "instagram",
     icon: "fab fa-instagram",
-    value: "Instagram @azhar.dev",
-    link: "https://instagram.com/azhar.dev",
+    value: "Instagram",
+    link: "https://instagram.com/azhar.siddiqui_",
     label: "Instagram",
   },
 ];
